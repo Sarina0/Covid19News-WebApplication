@@ -26,8 +26,22 @@ pip install flask
 11) Go to Storage (On the left sidebar), and click on "Create Database", start in test mode for now, click done.
 12) You are all set on firebase !!!
 
+## How to run?
+
+- Step 1 clone the project: git clone https://github.com/Sarina0/covid19info_MVC_done.git
+- Step 2 install pip and also install the aboved mentioned libraries.
+- Step 3 cd covid19info_MVC_done/application
+- Step 4 run this command: python3 app.py  (The server starts by default on http://127.0.0.1:5000/)
+- Step 5 copy the server link (http://127.0.0.1:5000/) and paste it in any browser.
+- Step 6 Enjoy the application :D 
+
+
 ## Additional Info
 
-The server starts by default on http://127.0.0.1:5000/
+
 
 After successful sign-up, the user name, email and uid are stored in a global dictionary called person
+
+You can have access to the hosted website with this domain https://covid19infonewcomers.ca/ 
+
+
