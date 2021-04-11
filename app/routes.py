@@ -36,7 +36,7 @@ def room():
 @app.route("/update")
 def update():
     return render_template("update.html")
-
+#about_us
 @app.route("/about")
 def about():
     return render_template("about.html")  
