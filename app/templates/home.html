@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css')}}" type="text/css" media="screen" />
+    <link rel="icon" href="screenshots/favicon.ico" />
+    <link rel="shortcut icon" href="screenshots/favicon.ico" />
+</head>
+<body>
+    <div id="head" class="clearfloat">
+      <div class="clearfloat" style="margin-top: 25px;">
+        <div id="logo" class="left" style="display:flex;">
+          <a href="#"><img src="https://cdn.discordapp.com/attachments/816200336108552192/816407821641318490/logo.png" width="180" height="100" alt="" /></a>
+          <div class="title_sec" style="display: block;">
+            <div class="title"><a href="#">Covid19 Info Newcomers</a></div>
+            <div id="tagline">Find Rooms, Travel Service, technology, etc</div>
+          </div>       
+        </div>
+        <div class="right"> <img src="{{ url_for('static', filename = 'covid19.png')}}" alt="" width="468" height="60" style="border-radius: 3px; margin-top:35px;" /> </div>
+      </div>
+      <div id="navbar" class="clearfloat">
+        <ul id="page-bar" class="left clearfloat">
+          <li><a href="/">News</a></li>
+          <li><a href="update">Local Update</a></li>
+          <li><a href="#">Politics</a></li>
+          <li><a href="room">Find the room</a></li>
+          <li><a href="apps">Apps</a></li>
+          <li><a href="#">About Us</a></li>          
+        </ul>
+          <ul>
+          <form method="get" id="searchform" action="#">
+          <div id="search">
+            <input type="text" value="" name="s" id="s" class="field" />
+            <input type="submit" id="searchsubmit" value="Search" class="button" />
+          </div>
+        </form>
+          </ul>
+        <ul class="right clearfloat">
+          <a href=login><button type="submit" class="btn btn-primary">Login</button></a>
+        </ul>
+        <ul class="right clearfloat">
+          <a href=signup><button type="submit" class="btn btn-primary">SignUp</button></a>
+        </ul>
+
+      </div>
+    </div>
+    <!--Middle Section-->
+    <div id="page" class="clearfloat">
+      <div id="top" class="clearfloat">
+        <div id="headline"> <h3>News(Toronto):</h3>
+          <div class="sub_title"><a href="https://www.cbc.ca/news/canada/toronto/ontario-covid-19-variant-ontario-long-term-care-1.5885976">Health unit probes whether COVID-19 variant behind 2nd Ontario long-term care home outbreak</a></div>
+          <div class="meta">[4th Mar 2021 | <a href="#">One Comment</a> | 481 views]</div>
+          <a href="#"> <img src="{{ url_for('static', filename = 'topicone.png')}}" alt="" class="left" width="300" height="300" /></a>
+          <p>The Simcoe Muskoka District Health Unit is investigating whether an outbreak at a long-term care home in the town of Bradford West Gwillimbury is due to the variant first detected in the United Kingdom.</p>
+          <p>At a news conference on Sunday, Dr. Charles Gardner, medical officer of health for the health unit, said a person linked to the Bradford Valley Care Community has tested positive for the variant.</p>
+          <p>Gardner said the person has had close contact with another individual who is a part of the outbreak at that home.</p>
+          <a href="https://www.cbc.ca/news/canada/toronto/ontario-covid-19-variant-ontario-long-term-care-1.5885976">Read the full story &raquo;</a> </div>
+        <div id="featured"><h2>Latest News</h2>
+          <div class="clearfloat"> <a href="#"> <img src="{{ url_for('static', filename = 'topictwo.png')}}" alt="" class="left" width="100" height="65" /></a>
+            <div class="info"><a href="https://www.cbc.ca/news/politics/negative-test-land-1.5906962#:~:text=Non%2Dessential%20travellers%20entering%20Canada,Minister%20Justin%20Trudeau%20announced%20today." class="feature_title">Negative COVID-19 test will soon be required at land border: Trudeau</a>
+              <p>Dr. Theresa Tam, the chief public health officer, said last week there is no exemption yet for Canadians who already have received a vaccine.</p>
+            </div>
+          </div>
+          <div class="divider"><hr></div>
+          <div class="clearfloat"> <a href="#"> <img src="{{ url_for('static', filename = 'topicthree.png')}}" alt="" class="left" width="100" height="65" /></a>
+            <div class="info"><a href="https://www.cbc.ca/news/canada/london/ontario-teen-staff-covid-death-1.5885718#:~:text=Yassin%20Dabeh%2C%2019%2C%20worked%20for%20cleaning%20company,at%20facility%20near%20London%2C%20Ont.&text=An%20Ontario%20teenager%20who%20worked,Paramount%20Fine%20Foods%2C%20Mohamad%20Fakih." class="feature_title">Ontario teen who died of COVID-19 was refugee who worked as long-term care home cleaner</a>
+              <p>Yassin Dabeh, 19, of London, Ont., worked at Middlesex Terrace, a long-term care home in nearby Delaware, Ont.</p>
+            </div>
+          </div>
+          <div class="divider"><hr></div>
+          <div class="clearfloat"> <a href="#"> <img src="{{ url_for('static', filename = 'topicfour.png')}}" alt="" class="left" width="100" height="65" /></a>
+            <div class="info"><a href="https://www.detroitnews.com/story/news/politics/2021/01/24/growing-number-republican-senators-oppose-trial-trump/115358140/" class="feature_title">Growing number of Republican senators oppose trial for Trump</a>
+              <p> Washington – A growing number of Republican senators say they oppose holding an impeachment trial, a sign of the dimming...</p>
+            </div>
+          </div>
+          <div class="divider"><hr></div>
+          <div class="clearfloat"> <a href="#"> <img src="{{ url_for('static', filename = 'topicfive.png')}}" alt="" class="left" width="100" height="65" /></a>
+            <div class="info"><a href="https://www.cp24.com/news/covid-19-cases-start-to-climb-again-as-variants-spread-in-step-with-dire-forecasts-1.5330620" class="feature_title">COVID-19 cases start to climb again as variants spread, in step with dire forecasts</a>
+              <p>OTTAWA - Canada's chief public health officer says new COVID-19 cases are starting to tick back up after a month of decline.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="middle" class="clearfloat"> <img src="{{ url_for('static', filename = 'category.png')}}" class="clearfloat" alt="" />
+        <div id="cat-1" class="category"> <span class="cat_title"><a href="https://www.kijiji.ca/">All in One Home Services</a></span>
+          <p><a href="https://www.kijiji.ca/"><a href="https://www.kijiji.ca/" style="text-decoration-line: underline;">www.kijiji.ca</a>Find All In One Home Services in Canada | Visit Kijiji Classifieds to check home services...</a></p>
+        </div>
+        <div id="cat-2" class="category"> <span class="cat_title"><a href="https://toronto.craigslist.org/">Find Room for 14 days quarantine</a></span>
+          <p><a href="https://toronto.craigslist.org/"><a href="https://www.kijiji.ca/" style="text-decoration-line: underline;">toronto.craigslist.org</a> You’re likely excited to start enjoying this beautiful country and it’s normal to dread the fourteen days.</a></p>
+        </div>
+        <div id="cat-3" class="category"> <span class="cat_title"><a href="https://www.uber.com/ca/en/drive/contact/">Contact Uber</a></span>
+          <p><a href="https://www.uber.com/ca/en/drive/contact/"><a href="https://www.uber.com/ca/en/drive/contact/" style="text-decoration-line: underline;">www.uber.com</a>Opportunity is everywhere. Make the most of your time on the road on the platform with the largest network of active riders.</a></p>
+        </div>
+        <div id="cat-4" class="category"> <span class="cat_title"><a href="#">Movie and Music</a></span>
+          <p><a href="#">Cool movie and music review at your desk! Never miss any article from Arthemia Demo! This is the category description.</a></p>
+        </div>
+        <div id="cat-5" class="category"> <span class="cat_title"><a href="#">Travel</a></span>
+          <p><a href="#">Travel spots? Flight tips? All magnificent places from all over the world here. This is the category description.</a></p>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

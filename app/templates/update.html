@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'app.css')}}" type="text/css" media="screen" />
+    <!-- <link rel="stylesheet" href="../static/app.css" type="text/css" media="screen" /> -->
+    <link rel="icon" href="screenshots/favicon.ico" />
+    <link rel="shortcut icon" href="screenshots/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="nav-bar-container">
+            <a href="#"><img src="https://cdn.discordapp.com/attachments/816200336108552192/816407821641318490/logo.png" width="120" height="70" alt="" /></a>
+            <a class="top-nav-home " href="login" >Login</a>
+            <a class="top-nav-home btn-login" href="/" style="margin: 0 0 0 3rem;">Home</a>
+        </div>
+    </div>
+    <div class="site-content">
+        <div class="site-content-header">
+            <div class="site-content-header-up">
+                <p>Canada Coronavirus update with statistics and graphs: total and new cases, deaths per day, mortality and recovery rates, current active cases, recoveries, trends and timeline.</p>
+            </div>
+            <div class="site-content-header-down">
+                <h1>BC Corona Virus Case Count<h1>
+            </div>
+        </div>
+        <div class="site-content-main">
+            <div class="txt-content" style="margin-top:3rem;">
+                <div class="top-flag">
+                    <img src="../static/img/flag_canada.png" width="120" height="70" />
+                    <h1>BC. Canada</h1>
+                </div>
+                <div class="statistics">
+                    <img src="../static/img/covidLogo3.jpg"/>
+                    <div class="info_txt">
+                        <p>Total Cases</p>
+                        <p>82,743</p>
+                    </div>
+                </div>
+                <div class="statistics">
+                    <img src="../static/img/covidLogo2.jpg"/>
+                    <div class="info_txt">
+                        <p>Currently Hospitalized</p>
+                        <p style="color:#696969">248</p>
+                    </div>
+                </div>
+                <div class="statistics">
+                    <img src="../static/img/covidLogo1.jpg"/>
+                    <div class="info_txt">
+                        <p>Confirmed Deaths</p>
+                        <p style="color:black">1,376</p>
+                    </div>
+                </div>
+                <div class="statistics">
+                    <img src="../static/img/covidLogo4.jpg"/>
+                    <div class="info_txt">
+                        <p>Recovered</p>
+                        <p style="color:#8ACA2B">76,289</p>
+                    </div>
+                </div>
+            </div>
+            <hr style="border-bottom: .0625rem solid #ececec;">
+            <div class="bottom_sec">
+                <span><p>Last Update 4/3/2021, 4:30 PM</p></span>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
