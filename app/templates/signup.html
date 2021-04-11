@@ -1,37 +1,65 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> 
+<html> 
 <head>
-	<title>Pyrebase-Flask-Login</title>
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'main.css') }}">
-</head>
-<body>
-<div class="wrapper fadeInDown">
-  <div id="formContent">
-    <!-- Tabs Titles -->
-    <a href="login"><h2 class="inactive underlineHover"> Sign In </h2></a>
-    <h2 class="active">Sign Up </h2>
-
-    <!-- Icon -->
-    <div class="fadeIn first">
-      <img src="{{ url_for('static', filename = 'user.png') }}" id="icon" alt="User Icon" />
-    </div>
-
-    <!-- Login Form -->
-    <form action="http://127.0.0.1:5000/register" method="POST">
-      <input type="text" id="name" class="fadeIn second" name="name" placeholder="name">
-      <input type="email" id="login" class="fadeIn second" name="email" placeholder="email">
-      <input type="password" id="password" class="fadeIn third" name="pass" placeholder="password">
-      <input type="submit" class="fadeIn fourth" value="Sign Up">
-    </form>
-    <div id="privacy_sec">
-      <input id="checkbox" type="checkbox" />
-      <label for="checkbox"> I agree to these <a href="#">Terms and Conditions</a>.</label>
-    </div>
-    <div id="formFooter">
-      <a class="underlineHover" href="#">Already had an account?</a>
-      <a href="signup"><h2 class="inactive underlineHover" style="margin:25px 8px 10px 8px"> Sign In </h2></a>
-    </div>
-  </div>
-</div>
-</body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Login Page </title>
+<style> 
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: white;
+}
+button { 
+       background-color: #4db5a0; 
+       width: 100%;
+        color: blue; 
+        padding: 15px; 
+        margin: 10px 0px; 
+        border: none; 
+        cursor: pointer; 
+         } 
+ form { 
+        border: 3px solid #f1f1f1; 
+    } 
+ input[type=text], input[type=password] { 
+        width: 100%; 
+        margin: 8px 0;
+        padding: 12px 20px; 
+        display: inline-block; 
+        border: 2px solid green; 
+        box-sizing: border-box; 
+    }
+ button:hover { 
+        opacity: 0.7; 
+    } 
+  .cancelbtn { 
+        width: auto; 
+        padding: 10px 18px;
+        margin: 10px 5px;
+    } 
+      
+   
+ .container { 
+        padding: 25px; 
+        background-color: lightblue;
+    } 
+</style> 
+</head>  
+<body>  
+    <center> <h1>Sign up</h1> </center> 
+    <form>
+        <div class="container"> 
+            <label>Username : </label> 
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <label>Password : </label> 
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <label>Email : </label>
+            <input type="password" placeholder="Enter your Email" name="Email" required>
+            <button type="submit">Sign up</button>
+            <input type="checkbox" checked="checked"> Remember me 
+        <p class="bottom">Already have an account? <a class="bottom" href="{{url_for('login')}}"> Sign In here</a></p>
+            
+        </div> 
+    </form>   
+</body>   
 </html>
+
