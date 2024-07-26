@@ -47,4 +47,4 @@ You can have access to the hosted website with this domain https://covid19infone
 You can check the hosted website [here](https://covidweb-flask-1.onrender.com/)!
 Please be patient as it takes a couple of minutes for the web to load :)
 Let me know if you have any questions on Discord![Discord Shield](https://discord.com/api/guilds/[sarina7426]/widget.png?style=shield)
-
+<img src="https://discord.com/api/guilds/[sarina7426]/widget.png?style=banner1" alt="Discord Banner 1"/>
