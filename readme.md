@@ -30,7 +30,7 @@ pip install flask
 
 - Step 1 clone the project: git clone https://github.com/Sarina0/covid19info_MVC_done.git
 - Step 2 install pip and also install the aboved mentioned libraries.
-- Step 3 cd covid19info_MVC_done/application
+- Step 3 cd Covid19News-WebApplication/application
 - Step 4 run this command: python3 app.py  (The server starts by default on http://127.0.0.1:5000/)
 - Step 5 copy the server link (http://127.0.0.1:5000/) and paste it in any browser.
 - Step 6 Enjoy the application :D 
@@ -44,4 +44,11 @@ After successful sign-up, the user name, email and uid are stored in a global di
 
 You can have access to the hosted website with this domain https://covid19infonewcomers.ca/ 
 
+You can check the hosted website [here](https://covidweb-flask-1.onrender.com/)!
+Please be patient as it takes a couple of minutes for the web to load :)
+Let me know if you have any questions on Discord
+<img
+  src="https://dcbadge.limes.pink/api/shield/USERID"
+  alt="write a description depending on your usage"
+/>
 
