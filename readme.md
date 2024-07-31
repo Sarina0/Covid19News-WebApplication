@@ -41,9 +41,6 @@ pip install flask
 
 
 After successful sign-up, the user name, email and uid are stored in a global dictionary called person
-
-You can have access to the hosted website with this domain https://covid19infonewcomers.ca/ 
-
 You can check the hosted website [here](https://covidweb-flask-1.onrender.com/)!
 Please be patient as it takes a couple of minutes for the web to load :)
 Let me know if you have any questions on Discord ![](https://dcbadge.limes.pink/api/shield/753664463017607349)
